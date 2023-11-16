@@ -10,6 +10,6 @@ int main() {
         sum=sum+num[i];
    }
    avg=sum/size;
-   printf("Average of the number is : %f",avg);
+   printf("Average of the array is : %f",avg);
    return 0;
 }
