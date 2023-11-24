@@ -1,3 +1,4 @@
+//Assume no elements repeating
 #include <stdio.h>
 
 int main() {
