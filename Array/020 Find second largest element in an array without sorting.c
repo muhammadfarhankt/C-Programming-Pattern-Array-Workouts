@@ -30,7 +30,7 @@ int main() {
         if (arr[i] > firstMax) {
             secondMax = firstMax;
             firstMax = arr[i];
-        } else {
+        } else if (arr[i] > secondMax) {
             secondMax = arr[i];
         }
     }
