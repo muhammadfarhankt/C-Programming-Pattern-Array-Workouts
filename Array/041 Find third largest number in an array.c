@@ -1,3 +1,4 @@
+// Assuming all elements are unique
 #include <stdio.h>
 
 int main() {
@@ -55,10 +56,10 @@ int main() {
             thirdMax = secondMax;
             secondMax = firstMax;
             firstMax = arr[i];
-        } else if (arr[i] > secondMax && arr[i] != firstMax) {
+        } else if (arr[i] > secondMax) {
             thirdMax = secondMax;
             secondMax = arr[i];
-        } else if (arr[i] > thirdMax && arr[i] != firstMax && arr[i] != secondMax) {
+        } else if (arr[i] > thirdMax) {
             thirdMax = arr[i];
         }
     }
