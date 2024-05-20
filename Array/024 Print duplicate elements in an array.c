@@ -29,7 +29,7 @@ int main() {
             }
         }
         // Print the element if it occurs more than once (duplicate)
-        if (count > 0) {
+        if (count > 1) {
             printf("%d ", arr[i]);
         }
     }
