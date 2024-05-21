@@ -20,7 +20,7 @@ int main() {
             // Check if the current element matches any other element
             if (arr[i] == arr[j]) {
                 // If the current element is found at an earlier index, skip counting
-                if (i < j) {
+                if (i > j) {
                     count--;
                     break;
                 }
@@ -28,7 +28,7 @@ int main() {
             }
         }
         // Print the frequency of each unique element
-        if (count > 0) {
+        if (count > 1) {
             printf("\nFrequency of %d is %d.", arr[i], count);
         }
     }
