@@ -21,8 +21,7 @@ int main() {
             // Check if the current element matches any other element
             if (arr[i] == arr[j]) {
                 // If the current element is found at an earlier index, skip counting
-                if (i < j) {
-                    count--;
+                if (i > j) {
                     break;
                 }
                 count++; // Increment count for each occurrence of the element
