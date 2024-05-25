@@ -19,7 +19,7 @@ int main() {
         count = 1; // Reset count for each new element
         // Check if the current element matches any other element
         for (j = i + 1; j < size; j++) {
-            if (arr[i] == arr[j]) {
+            if ((arr[i]==arr[j])&&(arr[i]!=arr[i-1])) {
                 count++; // Increment count for each occurrence of the element
             }
         }
