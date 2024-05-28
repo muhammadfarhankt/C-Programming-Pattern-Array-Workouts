@@ -16,10 +16,15 @@ int main() {
     printf("Elements that occur exactly two times in the array: ");
     // Loop to find elements occurring exactly two times
     for (i = 0; i < size; i++) {
-        count = 1; // Reset count for each new element
+        count = 0; // Reset count for each new element
         // Check if the current element matches any other element
-        for (j = i + 1; j < size; j++) {
-            if (arr[i] == arr[j]) {
+        for (j = 0; j < size; j++) {
+            if (arr[i]==arr[j]) {
+                // If the current element is found at an earlier index, skip counting
+                if (i > j) {
+                    count--;
+                    break;
+                }
                 count++; // Increment count for each occurrence of the element
             }
         }
